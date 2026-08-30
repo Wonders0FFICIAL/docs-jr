@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JR. Documentation</title>
+<meta name="description" content="Documentation for everything JR. builds.">
+<meta name="theme-color" content="#0A0D18">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JR.">
+<meta property="og:title" content="JR. Documentation">
+<meta property="og:description" content="Documentation for everything we build.">
+<meta property="og:url" content="https://docs.jrofficial.org/">
+<meta property="og:image" content="https://jrofficial.org/assets/images/JR. Logo.png">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JR. Documentation">
+<meta name="twitter:description" content="Documentation for everything we build.">
+<meta name="twitter:image" content="https://jrofficial.org/assets/images/JR. Logo.png">
+
+<link rel="icon" type="image/png" href="/assets/images/Favicon.png">
+<link rel="shortcut icon" type="image/png" href="/assets/images/Favicon.png">
+<link rel="apple-touch-icon" href="/assets/images/Favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<div class="stars" id="stars"><div class="orb-mid"></div></div>
+<canvas id="constellation-canvas"></canvas>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <a href="https://jrofficial.org/"><img src="/assets/images/JR. Logo.png" alt="JR. Logo" class="logo"></a>
+        <div class="nav-links" id="nav-links">
+            <a href="https://jrofficial.org/">Home</a>
+            <a href="https://jrofficial.org/blog">Blog</a>
+            <a href="https://jrofficial.org/pricing">Pricing</a>
+            <a href="https://jrofficial.org/products">Products</a>
+            <a href="/" class="active">Docs</a>
+            <a href="https://jrofficial.org/community">Community</a>
+        </div>
+    </div>
+    <div class="signup-hamburger">
+        <a href="https://jrofficial.org/signup" style="text-decoration:none"><button class="signup-btn">Sign Up</button></a>
+        <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+            <div></div><div></div><div></div>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>JR. Documentation</h1>
+            <p>Documentation for everything we build.</p>
+            <div class="search-bar" id="search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="doc-search" placeholder="Search documentation..." autocomplete="off">
+                <span class="kbd" id="kbd-hint">⌘ K</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrap">
+            <div class="section-head">
+                <h2>Products</h2>
+                <p>Explore documentation for JR. products.</p>
+            </div>
+
+            <div class="product-grid">
+
+                <a href="/docs/moka" class="product-card" style="--accent:#C8A27A;--accent-glow:rgba(200,162,122,0.14);">
+                    <div class="product-card-top">
+                        <img class="product-icon" src="/assets/images/moka-logo.png" alt="">
+                        <span class="status-badge stable">Stable</span>
+                    </div>
+                    <h3>Moka</h3>
+                    <p class="desc">Browse freely. Track nothing. A privacy-first browser with built-in ad &amp; tracker blocking and VPN.</p>
+                    <div class="card-meta">
+                        <span class="version-tag">v1.0.3</span>
+                        <span class="updated-tag">Updated —</span>
+                    </div>
+                    <span class="view-link">View documentation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </span>
+                </a>
+
+                <a href="/docs/avery" class="product-card" style="--accent:#F472B6;--accent-glow:rgba(244,114,182,0.14);">
+                    <div class="product-card-top">
+                        <img class="product-icon" src="/assets/images/avery-logo.png" alt="">
+                        <span class="status-badge beta">Beta</span>
+                    </div>
+                    <h3>Avery</h3>
+                    <p class="desc">Intelligence that works with you. JR.'s AI assistant for research, code, and analysis.</p>
+                    <div class="card-meta">
+                        <span class="version-tag">Early access</span>
+                        <span class="updated-tag">Updated —</span>
+                    </div>
+                    <span class="view-link">View documentation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </span>
+                </a>
+
+                <a href="/docs/forge" class="product-card" style="--accent:#F97316;--accent-glow:rgba(249,115,22,0.14);">
+                    <div class="product-card-top">
+                        <img class="product-icon" src="/assets/images/forge-logo.png" alt="">
+                        <span class="status-badge stable">Stable</span>
+                    </div>
+                    <h3>Forge</h3>
+                    <p class="desc">The IDE that ships with you. An AI-native code editor with project-wide intelligence.</p>
+                    <div class="card-meta">
+                        <span class="version-tag">v2.1.4</span>
+                        <span class="updated-tag">Updated —</span>
+                    </div>
+                    <span class="view-link">View documentation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </span>
+                </a>
+
+                <a href="/docs/lapis" class="product-card" style="--accent:#60A5FA;--accent-glow:rgba(96,165,250,0.14);">
+                    <div class="product-card-top">
+                        <img class="product-icon" src="/assets/images/lapis-logo.png" alt="">
+                        <span class="status-badge experimental">Alpha</span>
+                    </div>
+                    <h3>Lapis</h3>
+                    <p class="desc">Your server. Your rules. Full root-access VPS with private networking and snapshots.</p>
+                    <div class="card-meta">
+                        <span class="version-tag">v3.2.0</span>
+                        <span class="updated-tag">Updated —</span>
+                    </div>
+                    <span class="view-link">View documentation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </span>
+                </a>
+
+                <a href="/docs/juno" class="product-card" style="--accent:#00E0A4;--accent-glow:rgba(0,200,150,0.14);">
+                    <div class="product-card-top">
+                        <img class="product-icon" src="/assets/images/juno-logo.png" alt="">
+                        <span class="status-badge beta">Beta</span>
+                    </div>
+                    <h3>Juno</h3>
+                    <p class="desc">Compiled. Fast. Expressive. A statically-typed language with native concurrency.</p>
+                    <div class="card-meta">
+                        <span class="version-tag">v0.4.1</span>
+                        <span class="updated-tag">Updated —</span>
+                    </div>
+                    <span class="view-link">View documentation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="https://jrofficial.org/blog">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+                <a href="https://ko-fi.com/jr_official" target="_blank" rel="noopener noreferrer">Donate</a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Legal</h3>
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">License Information</a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Community</h3>
+            <div class="footer-links">
+                <a href="https://github.com/jr-official" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://discord.gg/d4kfXDrcG8" target="_blank" rel="noopener noreferrer">Discord</a>
+                <a href="https://x.com/jr_suite" target="_blank" rel="noopener noreferrer">X</a>
+                <a href="https://youtube.com/@junior.software" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-separator"></div>
+    <div class="copyright">© 2026 JR. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
