@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Installation · Lapis Docs · JR.</title>
+<meta name="description" content="Documentation for Lapis, JR.'s VPS platform.">
+<meta name="theme-color" content="#0A0D18">
+
+<link rel="icon" type="image/png" href="/assets/images/Favicon.png">
+<link rel="shortcut icon" type="image/png" href="/assets/images/Favicon.png">
+<link rel="apple-touch-icon" href="/assets/images/Favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../doc.css">
+<script src="../doc.js" defer></script>
+</head>
+<body data-product="lapis">
+
+<header class="doc-topbar">
+    <div class="topbar-left">
+        <a class="topbar-brand" href="https://docs.jrofficial.org/">
+            <img src="/assets/images/JR. Logo.png" alt="JR.">
+            <span class="doc-label">Documentation</span>
+        </a>
+        <span class="topbar-sep"></span>
+        <div class="product-switcher" id="product-switcher">
+            <button class="product-chip" id="product-chip-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                <img src="/assets/images/lapis-logo.png" alt="">
+                <span>Lapis</span>
+                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="product-dropdown" id="product-dropdown"></div>
+        </div>
+    </div>
+    <div class="topbar-right">
+        <button class="search-btn" id="search-btn" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <span class="search-label">Search</span>
+            <span class="kbd" id="kbd-hint">⌘K</span>
+        </button>
+        <a class="site-link" href="https://jrofficial.org">
+            <span class="site-link-text">JR. Website</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+        <button class="menu-btn" id="menu-btn" type="button" aria-label="Toggle navigation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+    </div>
+</header>
+
+<div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+<div class="doc-layout">
+
+    <aside class="doc-sidebar" id="doc-sidebar">
+        <div class="sidebar-product">
+            <img class="sidebar-product-icon" src="/assets/images/lapis-logo.png" alt="">
+            <div>
+                <div class="sidebar-product-name">Lapis</div>
+                <div class="sidebar-product-status">Alpha · v3.2.0</div>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-group">
+                <div class="nav-group-title">Overview</div>
+                <a href="#" class="nav-link">Introduction</a>
+                <a href="#" class="nav-link">Key Concepts</a>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-group-title">Getting Started</div>
+                <a href="#" class="nav-link active">Installation</a>
+                <a href="#" class="nav-link">Quick Start</a>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-group-title">Guides</div>
+                <a href="#" class="nav-link">Creating a Server</a>
+                <a href="#" class="nav-link">Configuring Networking</a>
+                <a href="#" class="nav-link">Managing Snapshots</a>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-group-title">Features</div>
+                <a href="#" class="nav-link">Root Access</a>
+                <a href="#" class="nav-link">Private Networking</a>
+                <a href="#" class="nav-link">Automated Backups</a>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-group-title">Reference</div>
+                <a href="#" class="nav-link">API Reference</a>
+                <a href="#" class="nav-link">CLI Reference</a>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-group-title">Resources</div>
+                <a href="#" class="nav-link">Status Page</a>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-group-title">FAQ</div>
+                <a href="#" class="nav-link">Frequently Asked Questions</a>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-group-title">Changelog</div>
+                <a href="#" class="nav-link">Release Notes</a>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="doc-content">
+        <nav class="breadcrumb">
+            <a href="https://jrofficial.org">JR.</a>
+            <span>/</span>
+            <a href="https://docs.jrofficial.org/">Documentation</a>
+            <span>/</span>
+            <span class="current">Lapis</span>
+        </nav>
+
+        <article class="doc-article">
+            <h1>Installation</h1>
+            <p class="doc-lead">Placeholder description — a short summary of what this page covers goes here once real content is written.</p>
+
+            <h2 id="system-requirements">Before you begin</h2>
+            <p>Placeholder paragraph text. This section would describe the account and billing requirements needed to provision a Lapis server.</p>
+            <ul>
+                <li>Placeholder requirement one</li>
+                <li>Placeholder requirement two</li>
+                <li>Placeholder requirement three</li>
+            </ul>
+
+            <div class="callout callout-info">
+                <div>
+                    <strong>Note</strong>
+                    Placeholder callout text — used for supplementary tips or clarifications relevant to this step.
+                </div>
+            </div>
+
+            <h2 id="download-and-install">Provisioning a server</h2>
+            <p>Placeholder paragraph explaining the provisioning steps. Real content should replace this with accurate, product-specific instructions.</p>
+
+            <pre><code>lapis servers create --region example --size example</code></pre>
+
+            <h3 id="verify-the-install">Connect to your server</h3>
+            <p>Placeholder paragraph describing how to confirm the server is reachable, e.g. via SSH.</p>
+
+            <div class="img-placeholder">Image placeholder</div>
+
+            <div class="callout callout-warning">
+                <div>
+                    <strong>Warning</strong>
+                    Placeholder warning text — used to flag a step that requires extra caution.
+                </div>
+            </div>
+
+            <h2 id="supported-platforms">Available regions</h2>
+            <p>Placeholder paragraph introducing the table below.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Region</th>
+                        <th>Status</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Placeholder region A</td>
+                        <td>Placeholder</td>
+                        <td>Placeholder note</td>
+                    </tr>
+                    <tr>
+                        <td>Placeholder region B</td>
+                        <td>Placeholder</td>
+                        <td>Placeholder note</td>
+                    </tr>
+                    <tr>
+                        <td>Placeholder region C</td>
+                        <td>Placeholder</td>
+                        <td>Placeholder note</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="next-steps">Next steps</h2>
+            <p>Placeholder paragraph pointing to the next page, e.g. <a href="#">Quick Start</a>, once real content exists.</p>
+        </article>
+
+        <div class="doc-pagenav">
+            <a href="#" class="pagenav-link prev">
+                <span class="pagenav-label">Previous</span>
+                <span class="pagenav-title">← Key Concepts</span>
+            </a>
+            <a href="#" class="pagenav-link next">
+                <span class="pagenav-label">Next</span>
+                <span class="pagenav-title">Quick Start →</span>
+            </a>
+        </div>
+    </main>
+
+    <aside class="doc-toc">
+        <div class="toc-title">On this page</div>
+        <nav id="toc-nav"></nav>
+    </aside>
+
+</div>
+
+</body>
+</html>
