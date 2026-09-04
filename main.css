@@ -202,7 +202,7 @@ footer {
 
 
 .hero {
-    padding: 112px 32px 48px;
+    padding: 80px 32px 32px;
     text-align: center;
     position: relative;
 }
@@ -237,7 +237,7 @@ footer {
 .hero p {
     font-size: 19px;
     color: var(--text-secondary);
-    margin: 0 0 48px;
+    margin: 0 0 32px;
     line-height: 1.6;
 }
 
@@ -304,8 +304,8 @@ section.section {
     padding: 72px 40px;
 }
 
-main > section.section:first-of-type {
-    padding-top: 24px;
+.hero + section.section {
+    padding-top: 32px;
 }
 
 .section-head {
